@@ -1,0 +1,65 @@
+h1 {
+   line-height: 3rem;
+}
+
+/* Home-page */
+#navbar .logo, #navbar ul, #navbar ul li  {
+   text-align: center;
+   float: none;
+}
+#navbar ul li a {
+   padding: 10px 0px;
+}
+
+#showcase .showcase-content {
+   padding-top: 100px;
+}
+#showcase .showcase-content h1 {
+   font-size: 40px;
+}
+#showcase .showcase-content p {
+   font-size: 16px;
+}
+
+#home-info {
+   height: auto;
+}
+#home-info .info-img {
+   display: none;
+}
+#home-info .info-content {
+   float: none;
+   width: 80vw;
+   margin: auto;
+   text-align: center;
+}
+
+#feature {
+   height: auto;
+}
+#feature .box {
+   float: none;
+   width: 100%;
+}
+
+
+/* About-Page */
+#about-info .info-left, #about-info .info-right {
+   width: 100%;
+   float: none;
+}
+#about-info .info-left {
+   text-align: center;
+}
+
+
+/* Contacts section */
+#icon {
+   height: auto;
+}
+#icon .box {
+   float: none;
+   width: 100%;
+   padding-bottom: 10px;
+   padding-top: 20px;
+}

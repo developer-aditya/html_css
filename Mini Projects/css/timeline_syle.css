@@ -1,0 +1,209 @@
+:root {
+   --primary-color: #425b84;
+   --secondary-color: #5b7bb4;
+   --max-width: 1100px;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font: normal 1rem/1.5 Ariel, sans-serif;
+   background-color: var(--primary-color);
+   color: #fff;
+   overflow-x: hidden;
+   padding-bottom: 50px;
+}
+
+.container {
+   max-width: 960px;
+   margin: auto;
+   text-align: center;
+}
+#main-header {
+   background-color: var(--secondary-color);
+   padding: 4rem 0;
+}
+#main-header h1 {
+   font-size: 2.3rem;
+}
+#timeline ul {
+   background-color: var(--primary-color);
+   padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* create line */
+#timeline ul li {
+   list-style: none;
+   position: relative;
+   width: 6px;
+   margin: 0 auto;
+   padding-top: 50px ;
+   background-color: #fff;
+}
+#timeline ul li:last-child {
+   padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/* boxes */
+#timeline ul li > div {
+   position: relative;
+   bottom: 0;
+   width: 400px;
+   padding: 1.2rem;
+   background-color: var(--secondary-color);
+   visibility: none;
+   opacity: 0;
+   transition: all 0.5s ease;
+}
+#timeline ul li > div p {
+   margin-left: 10px;
+}
+
+/* right side box align */
+#timeline ul li:nth-child(odd) > div {
+   position: relative;
+   left: 48px;
+   transform: translateX(200px);
+}
+/* left side box align*/
+#timeline ul li:nth-child(even) > div {
+   position: relative;
+   left: -442px;
+   transform: translateX(-200px);
+}
+
+/* Arrows for both left and right */
+#timeline ul li > div::before {
+   content: '';
+   position: absolute;
+   bottom: 5px;
+   width: 0;
+   height: 0;
+   border: solid;
+}
+/* arrow right */
+#timeline ul li:nth-child(odd) > div::before {
+   left: -15px;
+   border-width: 8px 16px 8px 0;
+   border-color: transparent var(--secondary-color) transparent transparent;
+}
+/* arrow left */
+#timeline ul li:nth-child(even) > div::before {
+   right: -15px;
+   border-width: 8px 0 8px 16px;
+   border-color: transparent transparent transparent var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+/* dots on line */
+#timeline ul li::after {
+   content: '';
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   width: 25px;
+   height: 25px;
+   background-color: #fff;
+   transform: translateX(-50%);
+   border-radius: 50%;
+   transition: background 0.5s ease;
+}
+#timeline ul li:last-child::after {
+   bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* showing boxes as they come in viewport and changing dot color*/
+#timeline ul li.show > div {
+   visibility: visible;
+   opacity: 1;
+   transform: none;
+}
+#timeline ul li.show::after {
+   background-color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* widescreen media query */
+@media (min-width:601px) and (max-width:950px) {
+   #timeline ul li > div {
+      width: calc((100vw - 170px)/2);
+   }
+   /* setting distance from line of left elements -(width of box - 42px)*/
+   #timeline ul li:nth-child(even) > div {
+      left: calc((170px - 100vw - 84px)/2);
+   }
+}
+
+
+
+
+
+
+
+
+
+/* smartphones media query */
+@media (max-width:600px) {
+   #main-header {
+      padding: 2.5rem 1rem;
+   }
+   #main-header h1 {
+      font-size: 2rem;
+   }
+
+   #timeline ul li {
+      margin-left: 30px;
+   }
+   #timeline ul li > div {
+      width: calc(100vw - 120px);
+   }
+   #timeline ul li:nth-child(even) > div {
+      left: 48px;
+   }
+   #timeline ul li:nth-child(even) > div::before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent var(--secondary-color) transparent transparent;
+   }
+}

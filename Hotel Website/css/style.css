@@ -1,0 +1,272 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   font-family: "Roboto", sans-serif;
+   font-size: 15px;
+   line-height: 1.7em;
+}
+
+a {
+   color: #333;
+   text-decoration: none;
+}
+
+h1, h2, h3 {
+   padding: 20px 0px;
+}
+
+p {
+   margin: 10px 0px;
+}
+
+
+
+/* Utility classes */
+.clr {
+   clear: both;
+}
+
+.py-1 {  padding: 10px 0px;   }
+.py-2 {  padding: 20px 0px;   }
+.py-3 {  padding: 30px 0px;   }
+
+.container {
+   margin: auto;
+   padding: 0px 20px;
+   overflow: auto;
+   max-width: 1100px;
+}
+.text-primary {
+   color: #f7c08a;
+}
+.lead {
+   font-size: 18px;
+   padding: 20px 0px;
+}
+.info-para {
+   font-size: 15px;
+   padding: 20px 0px;
+}
+.btn-dark {
+   padding: 15px 25px;
+   border-radius: 5px;
+   border: none;
+   background-color: #333;
+   color: #fff;
+}
+.btn-light {
+   background-color: #f4f4f4;
+   color: #333;
+}
+.btn-dark:hover{
+   background-color: #f7c08a;
+   color: #333;
+}
+.bg-dark {
+   background-color: #333;
+   color: #fff;
+}
+.bg-light {
+   background-color: #f3f3f3;
+   color: #333;
+}
+.bg-primary {
+   background-color: #f7c08a;
+   color: #333;
+}
+
+
+
+
+/* home-page */
+/* navbar */
+#navbar {
+   background-color: #333;
+   overflow: auto;
+}
+#navbar a {
+   color: #fff;
+}
+#navbar .logo {
+   float: left;
+}
+#navbar .logo a:hover {
+   color: #f7c08a;
+}
+#navbar ul {
+   float: right;
+   list-style: none;
+}
+#navbar ul li {
+   float: left;
+}
+#navbar ul li a {
+   display: block;
+   padding: 20px 20px;
+}
+#navbar ul li a:hover, #navbar ul li a.current {
+   background-color: #444;
+   color: #f7c08a;
+}
+/* Showcase-info */
+#showcase{
+   height: 550px;
+   background: url("../img/showcase.jpg") no-repeat center center/cover;
+}
+#showcase .showcase-content{
+   color: #fff;
+   height: 600px;
+   padding: 150px 50px;
+   text-align: center;
+}
+#showcase .showcase-content h1 {
+   font-size: 55px;
+}
+/* Home-Info */
+#home-info {
+   height: 475px;
+   overflow: hidden;
+}
+#home-info .info-img {
+   float: left;
+   width: 50%;
+   background: url("../img/photo-1.jpg") no-repeat center center/cover;
+   min-height: 100%;
+}
+#home-info .info-content {
+   padding: 50px 30px;
+   float: right;
+   width: 50%;
+   min-height: 100%;
+   text-align: center;
+}
+#home-info .info-content h1 {
+   font-size: 30px;
+}
+/* Feature */
+#feature{
+   height: 350px;
+   overflow: hidden;
+}
+#feature .box {
+   float: left;
+   text-align: center;
+   width: 33.33%;
+   min-height: 100%;
+   padding: 40px 40px;
+}
+/* Footer */
+#main-footer {
+   background-color: #444;
+   color: #fff;
+   height: 95px;
+   padding: 25px 0px;
+   text-align: center;
+}
+#main-footer p {
+   font-size: 15px;
+}
+
+
+
+
+
+/* about-page */
+/* about-info */
+#about-info .info-right{
+   float: right;
+   width: 50%;
+   min-height: 100%;
+}
+#about-info .info-right img {
+   display: block;
+   border-radius: 50%;
+   margin: auto;
+   width: 75%;
+   padding-top: 0px;
+
+}
+#about-info .info-left {
+   float: left;
+   width: 50%;
+   min-height: 100%;
+}
+#about-info .info-left h1 {
+   font-size: 45px;
+}
+/* testimonial */
+#testimonial-info {
+   background: url("../img/test-bg.jpg") no-repeat center center/cover;
+}
+#testimonial-info .l-heading {
+   color: #fff;
+   font-size: 50px;
+   text-align: center;
+   padding: 50px 0px;
+}
+#testimonial-info .testimonial {
+   padding: 20px;
+   margin-bottom: 50px;
+   opacity: 0.85;
+}
+#testimonial-info .testimonial img {
+   margin-right: 20px;
+   padding-top: 10px;
+   float: left;
+   border-radius: 50%;
+   width: 100px;
+}
+
+
+
+
+
+/* contacts page*/
+#contact .heading {
+   font-size: 40px;
+   padding-top: 50px;
+   padding-bottom: 10px;
+}
+/* form section */
+form {
+   padding: 40px 0px;
+}
+#contact .form-group {
+   width: 100%;
+   margin-bottom: 30px;
+}
+#contact .form-group label {
+   display: block;
+   margin-bottom: 5px;
+}
+#contact .form-group input, #contact .form-group textarea {
+   border-color: 1px #aaa solid;
+   padding: 10px;
+   height: 40px;
+   width: 100%;
+}
+#contact .form-group input:focus, 
+#contact .form-group textarea:focus {
+   outline: none;
+   border-color: #f7c08a;
+} 
+#contact .form-group textarea {
+   height: 200px;
+   padding: 15px;
+}
+/* icon-section */
+#icon {
+   height: 300px;
+   overflow: hidden;
+}
+#icon .box {
+   float: left;
+   text-align: center;
+   min-height: 100%;
+   width: 25%;
+   padding-top: 40px;
+}

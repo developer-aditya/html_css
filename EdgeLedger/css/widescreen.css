@@ -1,0 +1,17 @@
+/* Section: what */
+#what .items .item {
+   display: flex;
+   text-align: left;
+}
+#what .items .item i {
+   padding: 1rem;
+   margin-right: 2rem;
+   align-self: center;
+   margin-bottom: 0;
+}
+
+/* Section: Maps and Contacts */
+
+#con_map .map {
+   flex: 2;
+}

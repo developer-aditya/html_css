@@ -1,0 +1,73 @@
+:root {
+   --primary-color: rgba(13, 110, 139,0.75);
+   --secondary-color: rgba(229, 148, 0, 0.9);
+   --overlay-color: rgba(24, 39, 51, 0.85);
+   --menu-speed: 0.75s;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html, body {
+   font-family: "Roboto", sans-serif;
+   line-height: 1.4rem;
+}
+
+.container {
+   max-width: 960px;
+   margin: auto;
+   overflow: hidden;
+   padding: 0 3rem;
+}
+
+#showcase {
+   background: var(--primary-color);
+   color: #fff;
+   position: relative;
+   height: 100vh;
+}
+#showcase .showcase-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 100%;
+}
+#showcase::before {
+   content: '';
+   background: url("../img/showcase.jpg") no-repeat center center/cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+}
+
+#showcase .showcase-content h1 {
+   font-size: 4rem;
+   margin-bottom: 4rem;
+}
+#showcase .showcase-content p {
+   font-size: 1.2rem;
+   line-height: 1.5rem;
+   margin-bottom: 2rem;
+}
+#showcase .showcase-content a {
+   text-decoration: none;
+   padding: 0.75rem 1.25rem;
+   font-weight: bolder;
+   background-color: rgba(0,0,0,0);
+   color: #fff;
+   border: #fff 4px solid;
+   border-radius: 8px;
+   transition: all 0.25s ease;
+}
+#showcase .showcase-content a:hover {
+   color: var(--primary-color);
+   background-color: #fff;
+}
+
+

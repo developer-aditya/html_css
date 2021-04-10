@@ -1,0 +1,68 @@
+/* Section: what */
+#what .items {
+   flex-direction: column;
+}
+#what .items .item {
+   display: flex;
+   text-align: left;
+   line-height: 1.4;
+}
+#what .items .item i {
+   padding: 1rem;
+   margin-right: 2rem;
+   align-self: center;
+   margin-bottom: 0;
+}
+.l-heading {
+   font-size: 3rem;
+}
+
+
+
+/* Smartphones*/
+@media (max-width:500px) {
+    
+   /* utility classes */
+   .p-1 {
+      padding: 1rem 0rem;
+   }
+   .container {
+      padding: 0.25rem;
+   }
+   /* navbar */
+   #navbar {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   #navbar h1 {
+      margin-bottom: 1rem;
+   }
+   
+   /* Section:Who */
+   #who {
+      display: block;
+      line-height: 1.4;
+   }
+   #who .who-img {
+      display: none;
+   }
+
+   /* Section: clients */
+   #clients .items div img{
+      width: 90%;
+   }
+   #clients .items div:last-child {
+      display: none;
+   }
+
+   /* Section: Maps And Contacts */
+   #con_map {
+      flex-direction: column;
+   }
+   #con_map .map {
+      flex: none;
+      height: 250px;
+   }
+
+}
